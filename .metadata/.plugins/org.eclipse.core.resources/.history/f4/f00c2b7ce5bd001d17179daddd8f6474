@@ -1,0 +1,45 @@
+package db_manager;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+
+public class DbLogin {
+	JFrame frame;
+	JPanel loginPanel;
+	public DbLogin() {
+		// TODO Auto-generated constructor stub
+		frame = new JFrame("DB INFORMATION");
+		loginPanel = loginPanel();
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		GridLayout login = new GridLayout(1, 2);
+		ImageIcon img = new ImageIcon("C:\\Users\\HP\\Downloads\\584830f5cef1014c0b5e4aa1.png");
+		JLabel imgfile = new JLabel(img);
+		JButton but2 = new JButton("hhh");
+		frame.setLayout(login);
+		frame.add(imgfile);
+		frame.add(loginPanel);
+		frame.setVisible(true);
+	}
+	
+	private JPanel loginPanel() {
+		JPanel loginpanel = new JPanel();
+		JTextField adress = new JTextField();
+		JTextField password = new JTextField();
+		JButton loginButton = new JButton("Login");
+		GridLayout layout = new GridLayout(6,1);
+		layout.setHgap(99);
+		loginpanel.setLayout(layout);
+		loginpanel.add(new JLabel("Login Infromation"));
+		loginpanel.add(new JLabel("Server Adress"));
+		loginpanel.add(adress);
+		loginpanel.add(new JLabel("Password"));
+		loginpanel.add(password);
+		return loginpanel;
+	}
+	
+}

@@ -6,4 +6,5 @@
  *
  */
 module db_manager {
+	requires java.desktop;
 }

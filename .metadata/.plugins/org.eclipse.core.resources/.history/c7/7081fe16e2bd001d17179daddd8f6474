@@ -1,0 +1,28 @@
+package db_manager;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+
+public class DbLogin {
+	JFrame frame;
+	public DbLogin() {
+		// TODO Auto-generated constructor stub
+		frame = new JFrame("DB INFORMATION");
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		GridLayout login = new GridLayout(1, 2);
+		JButton but1 = new JButton();
+		JButton but2 = new JButton();
+		but1.setBackground(Color.cyan);
+		but2.setBackground(Color.red);
+		login.addLayoutComponent(null, but1);
+		login.addLayoutComponent(null, but2);
+		frame.setLayout(login);
+		frame.setVisible(true);
+	}
+	
+}

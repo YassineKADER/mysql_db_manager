@@ -1,0 +1,16 @@
+package db_manager;
+
+import javax.swing.*;
+
+
+public class DbLogin {
+	JFrame frame;
+	public DbLogin() {
+		// TODO Auto-generated constructor stub
+		frame = new JFrame("DB INFORMATION");
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.setSize(800, 600);
+		frame.setVisible(true);
+	}
+	
+}
