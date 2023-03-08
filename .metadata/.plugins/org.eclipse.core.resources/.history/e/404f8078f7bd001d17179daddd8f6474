@@ -1,6 +1,5 @@
 package db_manager;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -33,18 +32,14 @@ public class DbLogin {
 	private JPanel loginPanel() {
 		JPanel loginpanel = new JPanel();
 		JPanel spanel = new JPanel();
-		JPanel buttonspanel = new JPanel();
-		buttonspanel.setLayout(new BorderLayout());
 		JTextField adress = new JTextField();
 		JLabel logininfo = new JLabel("Login Informations");
 		JTextField password = new JTextField();
 		JButton loginButton = new JButton("Login");
 		GridLayout layout1 = new GridLayout(3,1);
 		GridLayout layout = new GridLayout(6,1);
-		buttonspanel.add(loginButton, BorderLayout.CENTER);
-		buttonspanel.add(new JLabel("          "), BorderLayout.EAST);
-		buttonspanel.add(new JLabel("          "), BorderLayout.WEST);
 		loginpanel.setLayout(layout1);
+		password.setH
 		spanel.setLayout(layout);
 		spanel.setBackground(Color.white);
 		loginButton.setForeground(Color.WHITE);
@@ -61,7 +56,7 @@ public class DbLogin {
 		spanel.add(new JLabel("Password:"));
 		spanel.add(password);
 		spanel.add(new JLabel());
-		spanel.add(buttonspanel);
+		spanel.add(loginButton);
 		loginpanel.add(spanel);
 		loginpanel.setBackground(Color.white);
 		return loginpanel;

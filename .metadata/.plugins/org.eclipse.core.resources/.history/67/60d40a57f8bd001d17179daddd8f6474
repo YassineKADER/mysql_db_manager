@@ -1,0 +1,7 @@
+package db_manager;
+
+public class Database {
+	database(String adress, String password){
+		
+	}
+}

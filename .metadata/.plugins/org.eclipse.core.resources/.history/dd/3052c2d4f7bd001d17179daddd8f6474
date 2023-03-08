@@ -42,8 +42,8 @@ public class DbLogin {
 		GridLayout layout1 = new GridLayout(3,1);
 		GridLayout layout = new GridLayout(6,1);
 		buttonspanel.add(loginButton, BorderLayout.CENTER);
-		buttonspanel.add(new JLabel("          "), BorderLayout.EAST);
-		buttonspanel.add(new JLabel("          "), BorderLayout.WEST);
+		buttonspanel.add(new JLabel("   kk"), BorderLayout.EAST);
+		buttonspanel.add(new JLabel("   kk"), BorderLayout.WEST);
 		loginpanel.setLayout(layout1);
 		spanel.setLayout(layout);
 		spanel.setBackground(Color.white);
