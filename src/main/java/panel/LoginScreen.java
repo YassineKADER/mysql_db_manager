@@ -4,6 +4,8 @@
  */
 package panel;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author YK
@@ -198,6 +200,14 @@ public class LoginScreen extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         System.out.println(jTextField1.getText()+" "+jTextField2.getText()+" "+jPasswordField1.getText());
+        DataBase db = new DataBase(jTextField1.getText(), jTextField2.getText(), jPasswordField1.getText());
+        boolean contest = db.checkConnection();
+        if(!contest){
+            JOptionPane.showMessageDialog(this, "Connection Failed","Conection Problem" ,JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            this.setVisible(false);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
